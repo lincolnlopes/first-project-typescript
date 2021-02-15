@@ -1,1 +1,3 @@
 # first-project-typescript
+
+# lincolngyn
