@@ -1,0 +1,12 @@
+{
+  "type": "mysql",
+  "host": "127.0.0.1",
+  "port": 3306,
+  "username": "gobarber",
+  "password": "gobarber",
+  "database": "gobarber",
+  "migrations": ["./src/database/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations/"
+  }
+}
