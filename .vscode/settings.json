@@ -1,4 +1,5 @@
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "explorer.compactFolders": false,
   "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "material-icon-theme",
