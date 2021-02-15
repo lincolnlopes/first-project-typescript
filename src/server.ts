@@ -1,12 +1,12 @@
-import express from "express";
+import express from 'express';
+import routes from './routes';
 
 const app = express();
-const PORT = 3001
 
+app.use(routes);
 
-app.get('/', (_:any, res:any) => res.json({message:'Hello World!'}));
+const PORT = 3001;
 
-app.listen(PORT|3000, () => {
-    console.log('Server started on port 3001');
-})
-
+app.listen(PORT || 3000, () => {
+  console.log('Server started on port 3001');
+});
