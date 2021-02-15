@@ -1,0 +1,20 @@
+{
+  "name": "first-project-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lincolnlopes/first-project-typescript.git",
+  "author": "Lincoln Lopes <lincolnlopes@msn.com>",
+  "license": "MIT",
+  "scripts": {
+    "build":"tsc",
+    "dev:server":"ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "ts-node-dev": "^1.1.1"
+  }
+}
