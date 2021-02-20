@@ -9,7 +9,6 @@ interface IUser {
   email: string;
   password: string;
 }
-
 class CreateUserService {
   public async execute({ name, email, password }: IUser): Promise<User> {
     const usersRepository = getRepository(User);
