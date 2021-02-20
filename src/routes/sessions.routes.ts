@@ -10,7 +10,7 @@ sessstionsRouter.post('/', async (request, response) => {
 
     const authenticateUserServices = new AuthenticateUserServices();
 
-    const { user } = await authenticateUserServices.execute({
+    const { user, token } = await authenticateUserServices.execute({
       email,
       password,
     });
@@ -18,7 +18,7 @@ sessstionsRouter.post('/', async (request, response) => {
     //@ts-expect-error
     delete user.password;
 
-    return response.json({ user });
+    return response.json({ user, token });
   } catch (e) {
     return response.status(400).json({ message: e.message });
   }
