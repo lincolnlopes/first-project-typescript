@@ -19,8 +19,8 @@ sessstionsRouter.post('/', async (request, response) => {
     delete user.password;
 
     return response.json({ user, token });
-  } catch (e) {
-    return response.status(400).json({ message: e.message });
+  } catch (err) {
+    return response.status(err.statusCode).json({ message: err.message });
   }
 });
 
