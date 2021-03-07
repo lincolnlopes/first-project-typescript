@@ -1,0 +1,258 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-02-21T16:25:38.673Z",
+  "__export_source": "insomnia.desktop.app:v2020.5.2",
+  "resources": [
+    {
+      "_id": "req_8e31edb54e614214ba81d7cf24742f1d",
+      "parentId": "fld_341a9313c5934d89aef6f39988d8ed83",
+      "modified": 1613869206678,
+      "created": 1613869163750,
+      "url": "http://localhost:3001/sessions",
+      "name": "CREATE",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"lincolnlopes11@msn.com\",\n\t\"password\": \"123456\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_0a7f9e212c654c26aae7b91abc268f49"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1613869163750,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_341a9313c5934d89aef6f39988d8ed83",
+      "parentId": "wrk_f2a897c28f3249c6aa161f0f6fe724e9",
+      "modified": 1613863003379,
+      "created": 1613863003379,
+      "name": "SESSIONS",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1613863003379,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_f2a897c28f3249c6aa161f0f6fe724e9",
+      "parentId": null,
+      "modified": 1613444339927,
+      "created": 1613444339927,
+      "name": "first-project-typescript",
+      "description": "",
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_d0431c6912744467ba020e3ee5ede23a",
+      "parentId": "fld_b664ab4a9fa343fc8d56cc5e9afd6af9",
+      "modified": 1613924606188,
+      "created": 1613924498650,
+      "url": "{{ _.base_url }}/users/avatar",
+      "name": "UPDATE AVATAR",
+      "description": "",
+      "method": "PATCH",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "",
+          "value": "",
+          "description": "",
+          "id": "pair_53deea953cac4500b806f6fdb178731f"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "{{ _.token }}" },
+      "metaSortKey": -1613924498651,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_b664ab4a9fa343fc8d56cc5e9afd6af9",
+      "parentId": "wrk_f2a897c28f3249c6aa161f0f6fe724e9",
+      "modified": 1613610656653,
+      "created": 1613610656653,
+      "name": "Users",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1613610656653,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_d10fc8adf5304a35a6a8f7f0181780ac",
+      "parentId": "fld_b664ab4a9fa343fc8d56cc5e9afd6af9",
+      "modified": 1613869224073,
+      "created": 1613610668134,
+      "url": "http://localhost:3001/users",
+      "name": "CREATE",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Lincoln Lopes\",\n\t\"email\": \"lincolnlopes1@msn.com\",\n\t\"password\": \"123456\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_4f6b5feef0a04adea233cb95f11f4867"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1613610668134,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b1582fdb5c4449ce80de638ba27889f2",
+      "parentId": "fld_4a289d1631d649d0aa3c3ae5e5d219a2",
+      "modified": 1613869460207,
+      "created": 1613444378389,
+      "url": "http://localhost:3001/appointments",
+      "name": "SHOW",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "",
+          "value": "",
+          "description": "",
+          "id": "pair_6bb296372592493483e6e9b51c6d8748"
+        }
+      ],
+      "authentication": { "type": "bearer", "token": "{{ _.token }}" },
+      "metaSortKey": -1613444378389,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_4a289d1631d649d0aa3c3ae5e5d219a2",
+      "parentId": "wrk_f2a897c28f3249c6aa161f0f6fe724e9",
+      "modified": 1613444360685,
+      "created": 1613444360685,
+      "name": "Appointments",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1613444360686,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_c37ad748f0494a958637e9fe1fb73e5f",
+      "parentId": "fld_4a289d1631d649d0aa3c3ae5e5d219a2",
+      "modified": 1613445223402,
+      "created": 1613444455485,
+      "url": "http://localhost:3001/appointments",
+      "name": "CREATE",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"provider\": \"Lincoln Lopes\",\n\t\"date\": \"{% now 'iso-8601', '' %}\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_98037cb7a31843b9b32ba6d471f2a4da"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1607908152371.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_90fecce6c9c1d6459d29405094a91e7880ac0fe7",
+      "parentId": "wrk_f2a897c28f3249c6aa161f0f6fe724e9",
+      "modified": 1613444340438,
+      "created": 1613444340438,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1613444340439,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_90fecce6c9c1d6459d29405094a91e7880ac0fe7",
+      "parentId": "wrk_f2a897c28f3249c6aa161f0f6fe724e9",
+      "modified": 1613444340444,
+      "created": 1613444340444,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_326a9d0c134c40a09ae5ff684087aa75",
+      "parentId": "wrk_f2a897c28f3249c6aa161f0f6fe724e9",
+      "modified": 1613444339936,
+      "created": 1613444339936,
+      "fileName": "first-project-typescript",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_f3ca48f690f64cdca02ecdca026bf6e7",
+      "parentId": "env_90fecce6c9c1d6459d29405094a91e7880ac0fe7",
+      "modified": 1613869345383,
+      "created": 1613444401655,
+      "name": "New Environment",
+      "data": {
+        "base_url": "http://localhost:3001",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTM4NjkyMTAsImV4cCI6MTYxMzk1NTYxMCwic3ViIjoiYzI2NjdmZDgtMzVmNi00YjViLTkxNjMtNzdlYWUyZmE0NGZjIn0.-wy92ZdrqoMVJzpYgyYWm9t-m8_gQkPAd44KogqoGRM"
+      },
+      "dataPropertyOrder": { "&": ["base_url", "token"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1613444401655,
+      "_type": "environment"
+    }
+  ]
+}
