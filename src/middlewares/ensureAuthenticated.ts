@@ -5,7 +5,7 @@ import authConfig from '../config/auth';
 interface TokenPayload {
   iat: number;
   exp: number;
-  sub: number;
+  sub: string;
 }
 
 export default function ensureAuthenticated(
@@ -23,6 +23,10 @@ export default function ensureAuthenticated(
     const decoded = verify(token, authConfig.jwt.secret);
 
     const { sub } = decoded as TokenPayload;
+
+    request.user = {
+      id: sub,
+    };
 
     return next();
   } catch {
